@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:gravity="center"
+    android:background="#ffff"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+       android:layout_marginTop="-50dp"
+
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:paddingVertical="15dp"
+        android:textColorHint="#019B6A"
+        android:textAlignment="center"
+        android:hint="Enter your email"
+        android:textColor="#8C1422"
+        android:layout_marginBottom="15dp"
+
+
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:textAlignment="center"
+        android:paddingVertical="15dp"
+        android:textColorHint="#01849B"
+        android:textColor="#BF360C"
+        android:hint="Enter your password"
+        android:layout_marginBottom="15dp"
+
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#0D83A1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingHorizontal="20dp"
+
+        android:background="#7CB342"
+
+      android:drawableEnd="@drawable/ic_baseline_arrow_right_alt_24"
+
+        android:text="Submit"
+
+        />
+
+    <TextView
+        android:visibility="invisible"
+
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#F4511E"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="Enter A Valid Email" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="20dp"/>
+
+
+</LinearLayout>
